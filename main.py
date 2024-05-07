@@ -4,6 +4,7 @@ def main():
     count = word_count(contents)
     letters = letter_count(contents)
     sorted_letters = sort_letters(letters)
+    
     print(f"--- Begin Report of {book_path} ---")
     print(f"{count} words found in the document")
     for letter in sorted_letters:
