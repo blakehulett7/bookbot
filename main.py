@@ -6,7 +6,9 @@ def main():
     sorted_letters = sort_letters(letters)
     print(f"--- Begin Report of {book_path} ---")
     print(f"{count} words found in the document")
-    print(sorted_letters)
+    for letter in sorted_letters:
+        print(f"The '{letter}' character was found {sorted_letters[letter]} times")
+    print("--- End Report ---")
     
     
 def read_book(book_path):
